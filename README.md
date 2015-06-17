@@ -8,7 +8,7 @@ This is developed in the Yabusame project of AIST.
 ## Compile
 
 ```
-git clone https://github.com/grivon/yabusame-qemu-dpt.git
+$ git clone https://github.com/grivon/yabusame-qemu-dpt.git
 ```
 
 ```
@@ -49,3 +49,5 @@ create bitmap /tmp/qemu.bm-14528.1434530591 (131344 bytes), dirty 58 / 1050736 (
 ## Author and Contact
 
 * Takahiro Hirofuchi, AIST
+
+Copyright (c) 2011-2015 National Institute of Advanced Industrial Science and Technology
