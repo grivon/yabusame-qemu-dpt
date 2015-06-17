@@ -78,6 +78,6 @@ create bitmap /tmp/qemu.bm-14528.1434530591 (131344 bytes), dirty 58 / 1050736 (
 
 ## Author and Contact
 
-* Takahiro Hirofuchi, AIST
+Takahiro Hirofuchi, Senior researcher of AIST
 
 Copyright (c) 2011-2015 National Institute of Advanced Industrial Science and Technology
