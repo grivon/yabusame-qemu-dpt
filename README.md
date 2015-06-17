@@ -19,9 +19,9 @@ contention of CPU and network.
 
 If you use Qemu-DPT for your research, please cite the below paper in your publication.
 
-Adding a Live Migration Model into SimGrid,
-Takahiro Hirofuchi, Adrien Lèbre, Laurent Pouilloux,
-Proceedings of the 5th IEEE International Conference on Cloud Computing Technology and Services 2013 (CloudCom2013), pp.96-103, Dec 2013
+Adding a Live Migration Model into SimGrid,  
+Takahiro Hirofuchi, Adrien Lèbre, Laurent Pouilloux,  
+Proceedings of the 5th IEEE International Conference on Cloud Computing Technology and Services 2013 (CloudCom2013), pp.96-103, Dec 2013  
 DOI: [10.1109/CloudCom.2013.20](http://dx.doi.org/10.1109/CloudCom.2013.20)
 
 ```
