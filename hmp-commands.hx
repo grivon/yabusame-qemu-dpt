@@ -841,6 +841,34 @@ Cancel the current VM migration.
 ETEXI
 
     {
+        .name       = "dpt_start",
+        .args_type  = "",
+        .params     = "",
+        .help       = "start dirty page tracking",
+        .mhandler.cmd = hmp_dpt_start,
+    },
+
+STEXI
+@item dpt_start
+@findex dpt_start
+Start dirty page tracking.
+ETEXI
+
+    {
+        .name       = "dpt_stop",
+        .args_type  = "",
+        .params     = "",
+        .help       = "stop dirty page tracking",
+        .mhandler.cmd = hmp_dpt_stop,
+    },
+
+STEXI
+@item dpt_stop
+@findex dpt_stop
+Stop dirty page tracking.
+ETEXI
+
+    {
         .name       = "migrate_set_speed",
         .args_type  = "value:o",
         .params     = "value",

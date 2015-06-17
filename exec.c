@@ -2660,10 +2660,17 @@ ram_addr_t qemu_ram_alloc_from_ptr(ram_addr_t size, void *host,
     }
     new_block->length = size;
 
+    ram_addr_t prev_last_ram_offset = qemu_last_ram_offset();
+
     QLIST_INSERT_HEAD(&ram_list.blocks, new_block, next);
 
     ram_list.phys_dirty = g_realloc(ram_list.phys_dirty,
+                                   qemu_last_ram_offset() >> TARGET_PAGE_BITS);
+
+    fprintf(stderr, "phys_dirty is reallocated. old size %ld, new size %ld\n",
+                                    prev_last_ram_offset >> TARGET_PAGE_BITS,
                                     qemu_last_ram_offset() >> TARGET_PAGE_BITS);
+
     memset(ram_list.phys_dirty + (new_block->offset >> TARGET_PAGE_BITS),
            0xff, size >> TARGET_PAGE_BITS);
 

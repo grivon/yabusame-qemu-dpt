@@ -718,6 +718,16 @@ void hmp_migrate_cancel(Monitor *mon, const QDict *qdict)
     qmp_migrate_cancel(NULL);
 }
 
+void hmp_dpt_start(Monitor *mon, const QDict *qdict)
+{
+    qmp_dpt_start(NULL);
+}
+
+void hmp_dpt_stop(Monitor *mon, const QDict *qdict)
+{
+    qmp_dpt_stop(NULL);
+}
+
 void hmp_migrate_set_downtime(Monitor *mon, const QDict *qdict)
 {
     double value = qdict_get_double(qdict, "value");
