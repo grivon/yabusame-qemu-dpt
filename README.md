@@ -4,7 +4,12 @@ This extention to Qemu/KVM allows you to measure the memory update speed of your
 This is developed in the Yabusame project of AIST.
 
 
+
 ## Compile
+
+```
+git clone https://github.com/grivon/yabusame-qemu-dpt.git
+```
 
 ```
 $ CC=gcc CFLAGS=-lrt ./configure --target-list=x86_64-softmmu --disable-docs
