@@ -1,9 +1,39 @@
 # Qemu-DPT
 
-This extention to Qemu/KVM allows you to measure the memory update speed of your VM.
-This is developed in the Yabusame project of AIST.
+Qemu-DPT (Dirty Page Tracking) is a tool to measure the memory update speed of your VM.
+It is a small extension to Qemu/KVM. This tool itself was developed in [the Yabusame project of AIST](http://grivon.apgrid.org/quick-kvm-migration) around 2012.
 
 
+## Background
+
+To accurately simulate the behavior of an IaaS cloud systems, you may want to
+obtain the memory update intensity of VMs through this extension. This
+information will be one of the input parameters to your simulation program.
+
+At the time of writing, [SimGrid](http://http://simgrid.gforge.inria.fr/) is
+the only simulation framework with an accurate precopy-based live migration
+model. It implements the precopy algorithm used in hypervisors. It can
+correctly simulates the duration of live migrations and the amount of
+transferred data, considering memory update speeds of VMs and resource
+contention of CPU and network.
+
+If you use Qemu-DPT for your research, please cite the below paper in your publication.
+
+Adding a Live Migration Model into SimGrid,
+Takahiro Hirofuchi, Adrien Lèbre, Laurent Pouilloux,
+Proceedings of the 5th IEEE International Conference on Cloud Computing Technology and Services 2013 (CloudCom2013), pp.96-103, Dec 2013
+DOI: [10.1109/CloudCom.2013.20](http://dx.doi.org/10.1109/CloudCom.2013.20)
+
+```
+@inproceedings{SimGridVM:CloudCom2013,
+	author = {Takahiro Hirofuchi and Adrien Lèbre and Laurent Pouilloux},
+	title = {Adding a Live Migration Model into SimGrid: One More Step Toward the Simulation of Infrastructure-as-a-Service Concerns},
+	booktitle = {Proceedings of the 2013 IEEE International Conference on Cloud Computing Technology and Science (CloudCom2013)},
+	year = {2013},
+	pages = {96--103},
+	publisher = {IEEE Computer Society},
+}
+```
 
 ## Compile
 
