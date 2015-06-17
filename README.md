@@ -6,8 +6,8 @@ It is a small extension to Qemu/KVM. This tool itself was developed in [the Yabu
 
 ## Background
 
-To accurately simulate the behavior of an IaaS cloud systems, you may want to
-obtain the memory update intensity of VMs through this extension. This
+To accurately simulate the behavior of an IaaS cloud system, you may want to
+obtain the memory update intensity of VMs through Qemu-DPT. This
 information will be one of the input parameters to your simulation program.
 
 At the time of writing, [SimGrid](http://http://simgrid.gforge.inria.fr/) is
