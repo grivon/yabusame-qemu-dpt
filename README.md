@@ -24,6 +24,12 @@ Takahiro Hirofuchi, Adrien Lèbre, Laurent Pouilloux,
 Proceedings of the 5th IEEE International Conference on Cloud Computing Technology and Services 2013 (CloudCom2013), pp.96-103, Dec 2013  
 DOI: [10.1109/CloudCom.2013.20](http://dx.doi.org/10.1109/CloudCom.2013.20)
 
+SimGrid VM: Virtual Machine Support for a Simulation Framework of Distributed Systems,  
+Takahiro Hirofuchi, Adrien Lèbre, Laurent Pouilloux,  
+IEEE Transactions on Cloud Computing, 2015 (To appear)  
+DOI: [10.1109/TCC.2015.2481422](http://dx.doi.org/10.1109/TCC.2015.2481422)
+
+
 ```
 @inproceedings{SimGridVM:CloudCom2013,
 	author = {Takahiro Hirofuchi and Adrien Lèbre and Laurent Pouilloux},
@@ -32,6 +38,16 @@ DOI: [10.1109/CloudCom.2013.20](http://dx.doi.org/10.1109/CloudCom.2013.20)
 	year = {2013},
 	pages = {96--103},
 	publisher = {IEEE Computer Society},
+}
+
+@article{SimGridVM:IEEETCC2015,
+	author = {Takahiro Hirofuchi and Adrien Lèbre and Laurent Pouilloux},
+	title = {{SimGrid VM}: Virtual Machine Support for a Simulation Framework of Distributed Systems},
+	booktitle = {IEEE Transactions on Cloud Computing (To appear)},
+	year = {2015},
+	pages = {x--x},
+	publisher = {IEEE},
+	ISSN = {2168-7161}
 }
 ```
 
